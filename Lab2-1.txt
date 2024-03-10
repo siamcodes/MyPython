@@ -1,0 +1,14 @@
+Lab2-1 ไฟกระพริบ
+Lab2-2 ไฟวิ่ง 4 ดวง (ใช้ for loop)
+from machine import Pin
+import time
+p13 = Pin(13, Pin.OUT)
+p14 = Pin(14, Pin.OUT)
+p15 = Pin(15, Pin.OUT)
+p16 = Pin(16, Pin.OUT)
+
+while True:
+   p13.on()
+   time.sleep_ms(500)
+   p13.off()
+   time.sleep_ms(500)
